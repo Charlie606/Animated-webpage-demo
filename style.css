@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100%;
+   background-color: gray;
+}
+header {
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar {
+    height: 60px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+   
+}
+.nav {
+    height: 60px;
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav:hover {
+    border: 2px solid red;
+    border-radius: 5px;
+}
+.nav-logo {
+    height: 40px;
+    width: 50px;
+    background-image: url(logo.webp);
+    background-size: cover;
+    margin-left: 0;
+    /* aspect-ratio: 3/2; */
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+    opacity: 0;
+    animation: image 0.5s linear forwards;
+    animation-delay: 0.3s;
+}
+.title {
+    font-weight: 800;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    margin: 10px;
+    background: linear-gradient(90deg, red, black, green);
+    background-clip: text;
+    color: transparent;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+    animation-delay: 1s;
+    filter: drop-shadow(10px 1px 2px rgb(54, 53, 53));
+}
+.features a {
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    margin: 25px;
+    padding: 5px 10px;
+    background: linear-gradient(90deg, red, black, green);
+    background-clip: text;
+    color: transparent;
+    opacity: 0;
+    animation: image 0.5s linear forwards;
+    animation-delay: 2s;
+}
+a:hover {
+    border: 2px solid red;
+    border-radius: 5px;
+}
+.form {
+    height: 60px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+    animation-delay: 2.5s;
+}
+.log-in {
+    height: 25px;
+    width: 80px;
+    background: linear-gradient(90deg, rgba(158, 0, 89, 0.8), rgba(255, 0, 84, 1), rgba(255, 84, 0, 1));
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    margin: 10px;
+}
+.app {
+    height: 40px;
+    width: 200px;
+    display: grid;
+    border-radius: 25px 0 25px 25px;
+    place-items: center;
+    background: linear-gradient(90deg, rgba(158, 0, 89, 0.8), rgba(255, 0, 84, 1), rgba(255, 84, 0, 1));
+    color: white;
+}
+.container {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+}
+@keyframes anim {
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.box1 {
+    height: calc(100vh - 60px);
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left: 6%;
+}
+.box1 h1 {
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 3rem;
+    animation-delay: 0.5s;
+    background: linear-gradient(180deg, red, black, green);
+    background-clip: text;
+    color: transparent;
+}
+.box1 p {
+    font-family: serif;
+    width: 500px;
+    margin: 20px 0;
+    animation-delay: 1s;
+    background: linear-gradient(90deg, red, black, green);
+    background-clip: text;
+    color: transparent;
+}
+.box1 button {
+    height: 40px;
+    width: 200px;
+    display: grid;
+    border: none;
+    border-radius: 25px 0 25px 25px;
+    place-items: center;
+    background: linear-gradient(90deg, rgba(158, 0, 89, 0.8), rgba(255, 0, 84, 1), rgba(255, 84, 0, 1));
+    color: white;
+    animation-delay: 1.5s;
+}
+.box2 {
+    height: 90%;
+    width: 650px;
+    opacity: 0;
+    transform: translate(30px);
+    background-image: url(my_image-removebg.png);
+    background-size: cover;
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+    animation: image 0.5s linear forwards;
+    animation-delay: 2s;
+    /* box-shadow: 0 0 100px black; */
+    filter: drop-shadow(20px 2px 5px rgb(31, 31, 31));
+}
+@keyframes image {
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+.anim {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup {
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+    color: brown;
+}
+.box1 {
+    height: auto;
+    width: 60%;
+    margin: 10px;
+    font-size: 1.2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.box5 {
+    height: auto;
+    width: 600px;
+    margin: 20px;
+    font-size: 1.2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+ul {
+    margin: 20px;
+}
+li {
+    height: auto;
+    width: 300px;
+    margin: 20px;
+}
